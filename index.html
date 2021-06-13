@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <title>Climbing App</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="type">Climb Type:</label>
+                <select name="climb_type" id="type">
+                        <option value="Sport">Sport</option>
+                        <option value="TR">Top Rope</option>
+                        <option value="Trad">Trad</option>
+                    </select><br><br>
+            <label for="distance">Distance (Miles): </label>
+            <input type="number" id="distance" name="distance"><br><br>
+            <label for="ratingMin">Rating (Minimum): </label>
+            <input type="number" id="ratingMin" name="distance"><br><br>
+            <label for="ratingMax">Rating (Maximum): </label>
+            <input type="number" id="ratingMax" name="distance"><br><br>
+            <button type="submit" id="submitBtn">Search</button>
+          </form>
+    </div>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script type="text/javascript" src="climb.js"></script>
+    
+</body>
+</html>
